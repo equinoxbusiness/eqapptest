@@ -1,0 +1,279 @@
+.ant-layout {
+    min-height: 100vh;
+    // background-image: radial-gradient(#df12ac, #121212, #121212);
+    background: #f5f9fc;
+    padding-top: 60px;
+
+    .ant-layout-content {
+        // overflow-x: auto;
+    }
+
+    .ant-layout-header,
+    .ant-layout-footer {
+        background: #fff;
+        // color: #fff;
+        backdrop-filter: blur(20px);
+        font-weight: bold;
+    }
+
+    .ant-layout-header {
+        box-shadow: 0px 0px 20px #cbdbe8;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 7px 15px;
+    }
+
+    .ant-layout-footer {
+        padding: 0.75rem;
+        backdrop-filter: blur(20px);
+        font-size: 12px;
+        color: #7a7a7a;
+    }
+}
+
+.ant-layout .ant-layout-header .ant-menu {
+    line-height: 57px;
+}
+
+.ant-menu-light .ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected),
+.ant-menu-light .ant-menu-submenu-title:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
+    color: #ff00bc !important;
+
+}
+
+.ant-menu-light.ant-menu-horizontal>.ant-menu-item-selected,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-selected {
+    color: #fff;
+
+}
+
+.ant-menu-light.ant-menu-horizontal>.ant-menu-item-selected::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-selected::after {
+    border-bottom-color: #ff00bc;
+}
+
+
+.ant-menu-light.ant-menu-horizontal>.ant-menu-item:hover::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-submenu:hover::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-item-active::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-active::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-item-open::after,
+.ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-open::after {
+    border-bottom-color: #ff00bc;
+}
+
+
+.ant-layout-sider-trigger {
+    display: none;
+}
+
+.ant-layout-sider {
+    height: calc(100vh - 60px);
+    padding: 10px !important;
+    backdrop-filter: blur(20px);
+    background: #fff !important;
+    position: sticky !important;
+    top: 60px;
+    box-shadow: 0px 0px 20px #cbdbe8;
+}
+
+.ant-menu-dark {
+    background: #0000 !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+    background-color: #131729;
+}
+
+.ant-breadcrumb a {
+    color: #000;
+}
+
+.ant-breadcrumb .ant-breadcrumb-separator {
+    color: #000;
+}
+
+.ant-table {
+    background: #fff !important;
+    border: 1px solid #dddddd;
+    border-radius: 8px !important;
+
+    th,
+    // td,
+    table,
+    thead {
+        backdrop-filter: blur(200px);
+        color: #000 !important;
+        white-space: nowrap;
+    }
+
+    table {
+        border-radius: 8px !important;
+    }
+}
+
+.ant-table-wrapper .ant-table-thead>tr>th,
+.ant-table-wrapper .ant-table-thead>tr>td {
+    background: #fff;
+}
+
+.ant-table-wrapper .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+.ant-table-wrapper .ant-table-thead>tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    background: #fff;
+}
+
+.ant-table-wrapper .ant-table:not(.ant-table-bordered) .ant-table-tbody>tr>td {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.ant-table-wrapper .ant-table-thead>tr>th,
+.ant-table-wrapper .ant-table-thead>tr>td {
+    border-bottom: 1px solid #cdcdcd;
+    background: #fff;
+}
+
+.ant-table-wrapper .ant-table:not(.ant-table-bordered) .ant-table-tbody>tr:last-child>td {
+    border-bottom: 0px solid #f0f0f0;
+}
+
+.ant-table-wrapper .ant-table-tbody>tr.ant-table-row:hover>td,
+.ant-table-wrapper .ant-table-tbody>tr>td.ant-table-cell-row-hover {
+    background: #ffffff1f;
+}
+.ant-table-content{
+    overflow-x: auto;
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #eb4a9b;
+    // font-weight: bold;
+}
+
+.ant-tabs .ant-tabs-ink-bar {
+    background: #eb4a9b;
+}
+
+.ant-tabs {
+    color: #fff;
+    // padding: 20px;
+    backdrop-filter: blur(200px);
+    background: #0000;
+    border-radius: 15px;
+    height: calc(100vh - 200px);
+    overflow: auto;
+    // border-bottom: 1px solid #131729;
+}
+
+.ant-tabs .ant-tabs-tab:hover {
+    color: #eb4a9b;
+}
+
+.ant-tabs .ant-tabs-tab {
+    color: #888;
+}
+
+.ant-tabs-nav-wrap {
+    border-bottom: 1px solid #131729;
+}
+
+.ant-breadcrumb a:hover {
+    color: #888;
+}
+
+.ant-message-top {
+    z-index: 999999;
+}
+
+.ant-form-item {
+    label {
+        flex-direction: row-reverse;
+        gap: 7px;
+        color: #000 !important;
+
+        &.ant-checkbox-wrapper {
+            flex-direction: inherit;
+        }
+    }
+
+    input {
+        background: #fff;
+        color: #000 !important;
+    }
+
+    .ant-input-password {
+        padding: 0 11px 0 0;
+
+        input {
+            padding: 4px 11px;
+            border-radius: 6px;
+        }
+    }
+
+}
+
+.ant-input-affix-wrapper .anticon.ant-input-password-icon {
+    color: #fff;
+}
+
+.ant-form-item .ant-form-item-label>label .ant-form-item-tooltip {
+    color: #fff !important;
+}
+
+.ant-picker {
+    background: rgba(43, 43, 43, 0.3803921569);
+    color: #fff;
+
+    input {
+        color: #fff !important;
+    }
+
+    .ant-picker-clear {
+        color: #fff;
+    }
+
+    path {
+        fill: #fff;
+    }
+
+}
+
+.ant-picker-ok {
+    button {
+        background: linear-gradient(45deg, #d412a3, #057dd3);
+    }
+}
+
+.ant-tabs>.ant-tabs-nav .ant-tabs-nav-more,
+.ant-tabs>div>.ant-tabs-nav .ant-tabs-nav-more {
+    color: #000;
+}
+
+.ant-menu-light .ant-menu-item-selected {
+    background-color: #eb4d9c1a;
+    color: #eb4b9b !important;
+}
+.ant-form-item{
+margin-bottom: 16px;
+}
+.ant-form-item .ant-form-item-explain-error{
+    font-size: 12px;
+}
+.ant-select .ant-select-selector {
+    padding-left: calc(3rem - 8px) !important;
+}
+.ant-drawer-content-wrapper{
+    width: 300px !important;
+}
+.ant-drawer .ant-drawer-body{
+    padding: 0;
+}
+.ant-menu {
+    .ant-menu-item {
+        padding-left: 16px !important;
+    }
+}
+.ant-switch {
+    background: rgba(0, 0, 0, 0.45);
+}

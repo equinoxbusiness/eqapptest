@@ -1,0 +1,21 @@
+{
+    "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "abi": [
+    {
+      "constant": true,
+      "inputs": [{ "name": "_owner", "type": "address" }],
+      "name": "balanceOf",
+      "outputs": [{ "name": "balance", "type": "uint256" }],
+      "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "name",
+        "outputs": [{ "name": "", "type": "string" }],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+      }
+  ]
+}

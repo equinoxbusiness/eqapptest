@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9879256d.css",
+    "main.js": "/static/js/main.9e35f69b.js",
+    "static/media/equinox_logo.png": "/static/media/equinox_logo.e2f609a618722f5e926b.png",
+    "static/media/BNB.png": "/static/media/BNB.5078efbc4eeb3f732b31.png",
+    "static/media/USDT.png": "/static/media/USDT.ec118fcad40bf4127020.png",
+    "static/media/BUSD.png": "/static/media/BUSD.171a77d833e22847b25e.png",
+    "static/media/eqn-logo.png": "/static/media/eqn-logo.38fac6f2f7f1c13ad7dd.png",
+    "static/media/rejected.png": "/static/media/rejected.1c2963ee3467352a1681.png",
+    "static/media/progress.png": "/static/media/progress.d531c5ab45f46ce83395.png",
+    "static/media/checked.png": "/static/media/checked.c5c95acc32fdaf6a347f.png",
+    "static/media/ETH.png": "/static/media/ETH.da12763e990589d364e5.png",
+    "static/media/btc.svg": "/static/media/btc.0a74ea3b5676029550b7407ce518a67a.svg",
+    "index.html": "/index.html",
+    "static/media/usdt.svg": "/static/media/usdt.2c1060dbb6747d4a94dcdd709c334871.svg",
+    "static/media/busd.svg": "/static/media/busd.488237bcbb08c092806e0e404596d001.svg",
+    "static/media/eth.svg": "/static/media/eth.c378096feb767dfd5337d2354cf83662.svg",
+    "static/media/bnb.svg": "/static/media/bnb.158a46aa85a03c34bb2585f6d7825be1.svg",
+    "main.9879256d.css.map": "/static/css/main.9879256d.css.map",
+    "main.9e35f69b.js.map": "/static/js/main.9e35f69b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9879256d.css",
+    "static/js/main.9e35f69b.js"
+  ]
+}
