@@ -318,14 +318,14 @@ function PendingRequest(props) {
                                 <div>
                                     Receiver: {pro.to_wallet}
                                     <br />
-                                    Descrription: {pro.description}
+                                    Description: {pro.description}
                                 </div>
                                 <div>
                                     Amount: {pro.amount} {org.project[0].token_name}
                                 </div>
                                 <div>
                                 {!pro.finalized && (
-                                    <span
+                                    <button
                                     onClick={() => {
                                         setCurrentValues(pro);
                                         setTransferApproveModal(true);
@@ -336,7 +336,7 @@ function PendingRequest(props) {
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path d="M5 12l5 5l10 -10"></path>
                                         </svg>
-                                    </span>
+                                    </button>
                                 )}
                                 {pro.finalized && (
                                      <span
@@ -347,7 +347,7 @@ function PendingRequest(props) {
                                    </span>
                                 )}
                                 </div>
-                                <div onClick={() => {
+                                <button onClick={() => {
                                     setCurrentValues(pro);
                                     setTransferDissApproveModal(true);
                                 }}>
@@ -356,10 +356,10 @@ function PendingRequest(props) {
                                         <path d="M18 6l-12 12"></path>
                                         <path d="M6 6l12 12"></path>
                                     </svg>
-                                </div>
-                                <div>
+                                </button>
+                                {/* <div>
                                     3 Days
-                                </div>
+                                </div> */}
                                 <div className='flex gap-3'>
                                 {!pro.finalized && (<Button type='primary' className='grad-btn border-0' onClick={() => {
                                     setCurrentValues(pro);
