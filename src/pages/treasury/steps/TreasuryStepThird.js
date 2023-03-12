@@ -351,7 +351,7 @@ function TreasuryStepThird(props) {
                 </Form.List>
                     <div className='flex'>
                         <Button
-                            className='mx-0 flex gap-1 mx-auto bordered border-gray-400 text-gray-400' type="primary"
+                            className='flex gap-1 mx-auto bordered border-gray-400 text-gray-400' type="primary"
                             onClick={() => props.previousStep()}
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-left" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">

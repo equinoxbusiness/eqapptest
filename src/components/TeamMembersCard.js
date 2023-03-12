@@ -1,13 +1,24 @@
+import { Breadcrumb, Space, Table, Tag, Typography } from 'antd';
 import React from 'react';
 import propTypes from "prop-types";
 
-function TeamMembersCard({membername}) {
+function TeamMembersCard({membername, memberwallet}) {
     return (
         <div>
             <div className='p-6 welcome-card rounded-lg'>
-                    <h1 className='font-bold text-xl mb-3 truncate text-gray-900 text-start'>
-                       {membername}
-                    </h1>
+                    <div className='font-bold text-lg mb-3 truncate text-slate-800 text-start'>
+                       {membername} {<br/>}
+                      
+                      <div className='text-sm flex'>
+                            <Typography.Text copyable={{icon: <svg xmlns="http://www.w3.org/2000/svg" className="ml-3 icon icon-tabler icon-tabler-copy" width="18" height="18" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z"></path>
+                                <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+                            </svg>, text: ''}} className="flex text-xs text-slate-500 items-center">{memberwallet}</Typography.Text>
+                            
+                        </div>
+
+                    </div>
                     <div className='flex gap-3'>
                         <a
                             href="https://twitter.com/"
@@ -54,7 +65,10 @@ function TeamMembersCard({membername}) {
 
 TeamMembersCard.propTypes = {
     membername: propTypes.string,
+    memberwallet: propTypes.string,
+    
 }
+
 
 
 export default TeamMembersCard;

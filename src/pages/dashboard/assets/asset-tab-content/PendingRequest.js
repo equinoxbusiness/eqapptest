@@ -34,7 +34,9 @@ function PendingRequest(props) {
               axios
                 .get(
                   `${process.env.REACT_APP_API_URL}/get_vote_list_by_type/${type}/${element.id}`
+                  
                 )
+                console.log(element.id)
                 .then(({ data }) => {
                   console.log(data, pro);
                   if (data.status === "success") {
