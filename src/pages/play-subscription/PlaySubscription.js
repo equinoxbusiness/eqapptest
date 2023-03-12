@@ -618,7 +618,7 @@ function PlaySubscription(props) {
                     </h1>
                     <p className='text-base text-gray-800'>
                         Project Subscription offer <br />
-                        <small>subscribe to projects by acquring project tokens if project subscription offer tails you will get yours funds back </small>
+                        <small>Subscribe to projects by acquring project tokens. If project subscription offer tails you can claim yours funds back </small>
                     </p>
                 </div>
                 <div className='form w-96 max-sm:w-full welcome-card rounded-lg p-6 pb-3 mx-auto'>
@@ -634,7 +634,7 @@ function PlaySubscription(props) {
                             rules={[
                                 {
                                     required: true,
-                                    message: 'Please input your username!',
+                                    message: 'Input Required!',
                                 },
                             ]}
                         >
@@ -645,7 +645,7 @@ function PlaySubscription(props) {
                             rules={[
                                 {
                                     required: true,
-                                    message: 'Please input your username!',
+                                    message: 'Input Required!',
                                 },
                             ]}
                         >
@@ -656,7 +656,7 @@ function PlaySubscription(props) {
                         </Form.Item>
 
                         <Form.Item>
-                            <Button type="primary" htmlType="submit" className='w-full font-bold mx-auto grad-btn border-0 '>
+                            <Button type="primary" htmlType="submit" className='w-full font-bold mx-auto bg-slate-800 border-0 '>
                             {props.account ? buttonName : "Connect wallet"}
                             </Button>
                         </Form.Item>
@@ -665,8 +665,8 @@ function PlaySubscription(props) {
             </div>
             <div className="text-center text-xs">
                 <p>
-                    <b>Note:</b>if you claim BNB from ongoing Subscription 
-                    you will get back  your BNB after deduction of 3.2% platform fee
+                    <b className='font-bold'>Note: </b>if you claim BNB from ongoing Subscription 
+                    you will get back your BNB after deduction of 3.2% platform fee
                 </p>
             </div>
         </Fragment>

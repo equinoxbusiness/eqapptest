@@ -119,12 +119,12 @@ const Icos = (props) => {
               setSelected((prev) => !prev);
             }} />
           </div>
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <p className="mr-1 font-bold mb-0">LISTED</p>
             <Switch checked={selected2} onChange={() => {
               setSelected2((prev) => !prev);
             }} />
-          </div>
+          </div> */}
         </div>
         <div className="">
           <div
@@ -134,7 +134,7 @@ const Icos = (props) => {
             aria-labelledby="all-tab"
           >
             <div className="px-6">
-              <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-6">
+              <div className="grid grid-cols-1 max-lg:grid-cols-1 gap-6">
 
                 {ico &&
                   ico.length &&
@@ -156,7 +156,7 @@ const Icos = (props) => {
                           <div className="min-w-[450px]">
                             <div className=" flex justify-between items-center ">
                               <div className="grid grid-flow-col gap-x-2 justify-start items-center ">
-                                <img src={i.token_logo} alt="" className="w-8" />
+                                {/* <img src={i.token_logo} alt="" className="w-8" /> */}
                                 <p className="font-bold text-2xl mb-0">
                                   {i.project_name}
                                 </p>
@@ -167,7 +167,7 @@ const Icos = (props) => {
                                     href={`https://bscscan.com/address/${multiSigData[0]?.org?.multisig_address}`}
                                     className="uppercase border-2 border-white flex items-center max-w-max "
                                   >
-                                    <span className="inline-block p-1.5 border-r text-xs grad-btn ">
+                                    <span className="inline-block p-1.5 border-r text-xs rounded-md text-white px-3 bg-slate-600 ">
                                       Multisig
                                     </span>
                                     <span className="inline-block p-1">
@@ -183,8 +183,8 @@ const Icos = (props) => {
                                     href={`https://bscscan.com/address/${multiSigData[0]?.project[0]?.gtoken_address}`}
                                     className="ml-4 uppercase border-2 border-white flex items-center max-w-max "
                                   >
-                                    <span className="inline-block p-1.5 border-r text-xs grad-btn">
-                                      GTOKEN
+                                    <span className="inline-block p-1.5 border-r text-xs rounded-md text-white px-3 bg-slate-600">
+                                      TOKEN
                                     </span>
                                     <span className="inline-block p-1">
                                       {" "}
@@ -438,7 +438,7 @@ const Icos = (props) => {
                                 target="_blank"
                                 className="uppercase border-2 border-white flex items-center max-w-max "
                               >
-                                <span className="inline-block p-1.5 border-r text-xs grad-btn border-0 mt-3">
+                                <span className="inline-block p-1.5 border-r text-xs rounded-sm text-white px-3 bg-slate-600 border-0 mt-3">
                                   WhitePaper
                                 </span>
                                 <span className="inline-block p-1 mt-3">
@@ -504,7 +504,7 @@ const Icos = (props) => {
                                       className={` ${i.reached === 2
                                           ? " pointer-events-none bg-gray-600 "
                                           : " bg-blue-500 "
-                                        }  p-2 rounded-md px-4 grad-btn border-0  mt-3 twhite"`}
+                                        }  p-2 rounded-md px-4 text-white bg-slate-500 border-0  mt-3 twhite"`}
                                       onClick={() => claimBNB(i.ico_address)}
                                     >
                                       Claim BNB
@@ -518,7 +518,7 @@ const Icos = (props) => {
                                       className={` ${i.reached === 1
                                           ? " pointer-events-none bg-gray-600 "
                                           : " bg-blue-500 "
-                                        }  p-2 rounded-md px-4 grad-btn border-0  mt-3 twhite"`}
+                                        }  p-2 rounded-md px-4 bg-slate-800 border-0 text-white mt-3 twhite"`}
                                       onClick={() => claimToken(i.ico_address)}
                                     >
                                       Claim Token

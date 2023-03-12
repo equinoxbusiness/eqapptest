@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate, Link } from "react-router-dom"; 
 import { connect } from 'react-redux';
+import { message, Tooltip, Switch } from "antd";
 
 function Home(props) {
     const { auth } = props;
@@ -17,12 +18,12 @@ function Home(props) {
     return (
         <div className='main-sec'>
             <div className='container mx-auto px-4 py-20 text-center'>
-                <div className=' mb-12 max-lg:text-center'>
-                    <h1 className='text-6xl font-bold mb-4 '>
-                        Welcome to the <span className='text-pink-500'>EQ Vault</span>
+                <div className=' mb-6 max-lg:text-center'>
+                    <h1 className='text-4xl font-bold mb-4 '>
+                        Deploy EQ Vault
                     </h1>
                     <p className='text-base text-gray-800'>
-                        The most trusted decentralized custody protocol and collective asset management platform.
+                         Collective asset management platform on BNB Chain.
                     </p>
                 </div>
                 <div className="grid grid-cols-2 px-16 max-lg:px-0 max-lg:grid-cols-1 gap-6 max-lg:text-center">
@@ -40,7 +41,7 @@ function Home(props) {
                         <p className='text-base mb-6'>
                             A new EQ Vault that is controlled by one or multiple owners.
                         </p>
-                        <button className='rounded-lg font-bold px-6 py-3 grad-btn text-white' onClick={routeChange}>Create new EQ Vault</button>
+                        <button className='rounded-md font-bold px-6 py-3 bg-slate-800 text-white' onClick={routeChange}>Create new EQ Vault</button>
                     </div>
                     <div className='p-6 welcome-card rounded-lg '>
                         <div className='mb-3 text-pink-500'>
@@ -54,9 +55,12 @@ function Home(props) {
                             Add existing EQ Vault
                         </h3>
                         <p className='text-base mb-6'>
-                            Already have a EQ Vault? Add your Safe using your Safe address.
+                            Already have an EQ Vault? Add your Safe using your Safe address.
                         </p>
-                        <Link to='/dashboard/home'><button className=' border border-gray-200 rounded-lg font-bold px-6 py-3 '>Add existing EQ Vault</button></Link>
+                        <><Tooltip title=" This feature is coming soon"
+                        trigger={['hover', 'click']}
+                                    placement="top"
+                                    ><Link to='/dashboard/home'><button disabled={true} className=' border border-gray-200 text-slate-300 rounded-md font-medium px-6 py-3 '>Add Existing Vault</button></Link></Tooltip></>
                     </div>
                 </div>
             </div>
