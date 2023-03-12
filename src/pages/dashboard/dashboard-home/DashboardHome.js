@@ -408,9 +408,9 @@ function DashboardHome(props) {
                                 <div className='text-sm text-gray-400'>
                                     Members <br/>Overview
                                 </div>
-                                <div className='text-2xl font-bold text-yellow-500'>
+                                <Link to={'/dashboard/members'} className='text-2xl font-bold text-yellow-500'>
                                     {org?.members ? org.members.filter(m=>m.is_active===1).length : 0}
-                                </div>
+                                </Link>
                                 <div className='text-sm text-gray-400'>
                                     Active
                                 </div>
