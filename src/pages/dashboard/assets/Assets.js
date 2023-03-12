@@ -95,7 +95,7 @@ function Assets(props) {
         if (contract) {
             const _balance = await contract.methods.balanceOf(multiSigAddr).call();
             const _acctualBal = web3.utils.fromWei(`${_balance}`, "ether");
-            console.log("CURRENT TOKEN BALANCE", _acctualBal);
+            console.log("CURRENT TOKEN BALANCE", value, _acctualBal);
             setCurrentTokenBalance(value);
 
             // console.log(_balance);
@@ -326,10 +326,10 @@ function Assets(props) {
                 <div className='mt-6'>
                     <div className='text-center'>
                         <div className='text-xl font-bold mb-3'>
-                            Create Request
+                            Create Request<br /><p className='text-xs text-slate-400'>BEP20 tokens only</p>
                         </div>
                         <p className='mb-6'>
-                            Create rquest to initiating an instance for sending crypto assets to receiver wallet. it must be approved by all members within 7days of initiation for sucessful transaction
+                            Create rquest to initiating an instance for sending crypto assets to receiver wallet. it must be approved by all members within 7days of initiation for sucessfull transaction
                         </p>
                     </div>
                     <div>

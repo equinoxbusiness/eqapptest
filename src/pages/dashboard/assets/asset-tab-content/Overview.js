@@ -395,6 +395,7 @@ function Overview(props) {
                                     <img src={token.image} alt='' className='w-[2rem] mr-2'/>
                                     {token.token}
                                 </div>
+                                
                                 <div className='text-xl text-gray-700 font-bold truncate'>
                                     {token.balance}
                                 </div>
