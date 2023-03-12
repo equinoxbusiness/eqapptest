@@ -1,3 +1,4 @@
+import { Breadcrumb, Space, Table, Tag, Typography } from 'antd';
 import { Button, message, Tooltip } from 'antd';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -283,7 +284,86 @@ function Overview(props) {
               message.success("Transaction successful");
             });
         }
+     
     };
+
+    const transCol = [
+      {
+          title: 'ID',
+          dataIndex: 'id',
+          key: 'id',
+      },
+      {
+          title: 'Recivers',
+          dataIndex: 'to_wallet',
+          key: 'to_wallet',
+      },
+      {
+          title: 'Description',
+          dataIndex: 'description',
+          key: 'description',
+      },
+      {
+          title: 'Amount',
+          key: 'amount',
+          dataIndex: 'amount',
+          // render: (_, { tags }) => (
+          //     <>
+          //         {tags.map((tag) => {
+          //             let color = tag.length > 5 ? 'geekblue' : 'green';
+          //             if (tag === 'loser') {
+          //                 color = 'volcano';
+          //             }
+          //             return (
+          //                 <Tag color={color} key={tag}>
+          //                     {tag.toUpperCase()}
+          //                 </Tag>
+          //             );
+          //         })}
+          //     </>
+          // ),
+      },
+      {
+          title: 'Start Date',
+          key: 'proposed_date',
+          render: (text) => {
+              return text?.proposed_date?.substring(0, 10);
+          }
+      },
+      {
+          title: 'End Date',
+          key: 'finished_date',
+          render: (text) => {
+              return text?.finished_date?.substring(0, 10);
+          }
+      },
+      {
+          title: 'Status',
+          key: 'status',
+          render: (val, record) => {
+              return (
+              <p className="font-medium text-xs mb-0  text-center">
+                  {record.status === 0 ? (
+                      <span className="bg-yellow-400 py-1 px-2 text-white font-bold rounded-md">
+                      In Progress
+                      </span>
+                  ) : record.status === 1 ? (
+                      <span className="bg-green-400 py-1 px-2 text-white font-bold rounded-md">
+                      Completed
+                      </span>
+                  ) : (
+                      <span className="bg-red-400 py-1 px-2 text-white font-bold rounded-md">
+                      Failed
+                      </span>
+                  )}
+              </p>
+          )
+          },
+      }
+  ];
+  const transData = org?.fund_transfer ? org.fund_transfer : [];
+
+    
     return (
         <div>
             <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-6">
@@ -412,6 +492,17 @@ function Overview(props) {
                     >
                       <Button type='primary' className='grad-btn border-0' onClick={() => message("This feature is coming soon!")}>Import Token</Button>
                     </Tooltip>
+                </div>
+
+               
+            </div>
+
+            <div className='mb-8'>
+                <div className='text-base font-bold mb-3'>
+                    Recent Transaction requests
+                </div>
+                <div>
+                    <Table pagination={false} columns={transCol} dataSource={transData} />
                 </div>
             </div>
         </div>
