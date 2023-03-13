@@ -411,6 +411,7 @@ function AddMemberRequest(props) {
                         return (
                             <div className='welcome-card rounded-lg p-6 mb-6 text-black' key={pro.id}>
                                 <div className='flex flex-wrap gap-6 justify-between'>
+                                    
                                     <div>
                                         Name: <b>{pro.member_name}</b>
                                     </div>

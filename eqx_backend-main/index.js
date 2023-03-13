@@ -20,7 +20,7 @@ const con = mysql.createConnection({
     host: "db-mysql-blr1-00233-do-user-11796634-0.b.db.ondigitalocean.com",
     port: 25060,
     user: "doadmin",
-    password: "AVNS_KmfzSADJdXAUrd714bV",
+    password: "AVNS_S33YLMDz6s_zTDbr4bd",
     database: "eqx_app"
 });
 con.connect((err) => {

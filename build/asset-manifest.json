@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.86c98244.css",
-    "main.js": "/static/js/main.82cfba12.js",
+    "main.css": "/static/css/main.1327ff5c.css",
+    "main.js": "/static/js/main.78233043.js",
     "static/media/equinox_logo.png": "/static/media/equinox_logo.e2f609a618722f5e926b.png",
     "static/media/BNB.png": "/static/media/BNB.5078efbc4eeb3f732b31.png",
     "static/media/USDT.png": "/static/media/USDT.ec118fcad40bf4127020.png",
@@ -17,11 +17,11 @@
     "static/media/busd.svg": "/static/media/busd.488237bcbb08c092806e0e404596d001.svg",
     "static/media/eth.svg": "/static/media/eth.c378096feb767dfd5337d2354cf83662.svg",
     "static/media/bnb.svg": "/static/media/bnb.158a46aa85a03c34bb2585f6d7825be1.svg",
-    "main.86c98244.css.map": "/static/css/main.86c98244.css.map",
-    "main.82cfba12.js.map": "/static/js/main.82cfba12.js.map"
+    "main.1327ff5c.css.map": "/static/css/main.1327ff5c.css.map",
+    "main.78233043.js.map": "/static/js/main.78233043.js.map"
   },
   "entrypoints": [
-    "static/css/main.86c98244.css",
-    "static/js/main.82cfba12.js"
+    "static/css/main.1327ff5c.css",
+    "static/js/main.78233043.js"
   ]
 }
